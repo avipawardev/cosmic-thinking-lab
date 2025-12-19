@@ -1,9 +1,13 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Reveal from "../components/Reveal";
+import ApplicationModal from "../components/ApplicationModal";
 import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 
 export default function Careers(): JSX.Element {
+    const [selectedRole, setSelectedRole] = useState<string | null>(null);
+
     const roles = [
         {
             title: "Senior Product Designer",
@@ -102,7 +106,10 @@ export default function Careers(): JSX.Element {
                         <div className="space-y-4">
                             {roles.map((role, idx) => (
                                 <Reveal key={role.title} delayMs={300 + (idx * 50)}>
-                                    <div className="group relative border border-white/10 bg-white/5 p-8 hover:bg-white/10 transition-all duration-300 cursor-pointer">
+                                    <div
+                                        onClick={() => setSelectedRole(role.title)}
+                                        className="group relative border border-white/10 bg-white/5 p-8 hover:bg-white/10 transition-all duration-300 cursor-pointer"
+                                    >
                                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                                             <div>
                                                 <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">
@@ -135,18 +142,24 @@ export default function Careers(): JSX.Element {
                             <p className="text-gray-400 mb-8 max-w-xl mx-auto text-lg">
                                 We are always looking for exceptional talent. Send us your portfolio and tell us how you can contribute to the mission.
                             </p>
-                            <a
-                                href="mailto:connect@cosmicthinkinglab.online"
-                                className="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition-colors inline-block"
+                            <button
+                                onClick={() => setSelectedRole("General Application")}
+                                className="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition-colors inline-block cursor-pointer"
                             >
                                 Email Us
-                            </a>
+                            </button>
                         </div>
                     </Reveal>
                 </section>
             </main>
 
             <Footer />
+
+            <ApplicationModal
+                isOpen={!!selectedRole}
+                onClose={() => setSelectedRole(null)}
+                roleTitle={selectedRole || ""}
+            />
         </div>
     );
 }
