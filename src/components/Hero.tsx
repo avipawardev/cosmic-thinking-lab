@@ -63,6 +63,10 @@ export default function Hero(): JSX.Element {
             <Link to="/careers" className="nav-button is-btn w-inline-block">
               <div>CAREERS</div>
             </Link>
+            <div className="nav-button is-non">/</div>
+            <Link to="/contact" className="nav-button is-btn w-inline-block">
+              <div>CONNECT</div>
+            </Link>
           </div>
           <Link to="/login" className="icon-button is-mobile w-inline-block">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 501 501" fill="none" className="gate-icon">
