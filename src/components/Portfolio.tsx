@@ -18,7 +18,7 @@ const projects: Project[] = [
 
 export default function Portfolio(): JSX.Element {
   return (
-    <section id="portfolio" className="relative py-32 md:py-40 bg-black">
+    <section id="portfolio" className="relative py-4 md:py-6 bg-transparent">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tight">
@@ -32,8 +32,8 @@ export default function Portfolio(): JSX.Element {
         <div className="grid gap-8 md:gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, idx) => (
             <Reveal key={p.name} delayMs={100 * (idx % 3)}>
-              <article className="group border border-white/10 hover:border-white/30 transition-colors p-8">
-                <div className="mb-6">
+              <article className="group border border-white/10 hover:border-white/30 transition-colors p-8 h-96 flex flex-col">
+                <div className="mb-6 flex-1">
                   <h3 className="text-2xl font-bold text-white mb-3">{p.name}</h3>
                   <p className="text-gray-400 mb-6 leading-relaxed">{p.tagline}</p>
                 </div>
@@ -60,7 +60,7 @@ export default function Portfolio(): JSX.Element {
                   ))}
                 </div>
 
-                <div className="pt-4 border-t border-white/10">
+                <div className="pt-4 border-t border-white/10 mt-auto">
                   <a
                     href="#contact"
                     className="text-sm font-medium text-white hover:text-gray-300 transition-colors inline-flex items-center gap-2"

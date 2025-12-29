@@ -13,7 +13,7 @@ export default function NavBar(): JSX.Element {
   ];
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <header className="fixed top-0 inset-x-0 z-50 bg-[#0a0a14]/80 backdrop-blur-md border-b border-white/10">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6">
           <Link to="/" className="flex items-center space-x-3">
@@ -48,7 +48,7 @@ export default function NavBar(): JSX.Element {
         </div>
 
         {open && (
-          <div className="md:hidden border-t border-white/10 px-4 py-4 bg-black">
+          <div className="md:hidden border-t border-white/10 px-4 py-4 bg-[#0a0a14]">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link

@@ -78,7 +78,7 @@ export default function ContactCTA(): JSX.Element {
   };
 
   return (
-    <section id="contact" className="relative py-32 md:py-40 bg-black">
+    <section id="contact" className="relative pt-20 pb-4 md:pt-24 md:pb-6 bg-transparent">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-16">
           <h2 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tight">

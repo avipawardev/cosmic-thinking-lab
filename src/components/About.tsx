@@ -8,9 +8,9 @@ export default function About(): JSX.Element {
   ];
 
   return (
-    <section id="about" className="relative py-32 md:py-40 bg-black">
+    <section id="about" className="relative pt-20 pb-4 md:pt-24 md:pb-6 bg-transparent overflow-hidden">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-20 md:grid-cols-12 items-center">
+        <div className="grid gap-20 md:grid-cols-12 items-start">
           <Reveal className="md:col-span-6" delayMs={0}>
             <div>
               <h2 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tight">

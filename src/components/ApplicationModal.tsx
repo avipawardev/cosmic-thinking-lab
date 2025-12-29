@@ -124,7 +124,7 @@ export default function ApplicationModal({ isOpen, onClose, roleTitle }: Applica
             />
 
             {/* Modal Content */}
-            <div className="relative w-full max-w-lg bg-zinc-900 border border-white/10 rounded-2xl p-6 md:p-8 max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in duration-200">
+            <div className="relative w-full max-w-lg bg-[#0d0d1a] border border-white/10 rounded-2xl p-6 md:p-8 max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in duration-200">
                 <button
                     onClick={onClose}
                     className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"

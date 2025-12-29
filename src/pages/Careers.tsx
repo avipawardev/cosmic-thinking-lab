@@ -55,12 +55,12 @@ export default function Careers(): JSX.Element {
     ];
 
     return (
-        <div className="min-h-screen bg-black text-white">
+        <div className="min-h-screen bg-transparent text-white">
             <NavBar />
 
-            <main className="relative pt-32 pb-20">
+            <main className="relative pt-32 pb-12">
                 {/* Hero Section */}
-                <section className="mx-auto max-w-7xl px-6 mb-32">
+                <section className="mx-auto max-w-7xl px-6 mb-16">
                     <Reveal>
                         <h1 className="text-6xl md:text-8xl font-black mb-8 tracking-tight">
                             Join the <br />
@@ -76,7 +76,7 @@ export default function Careers(): JSX.Element {
                 </section>
 
                 {/* Benefits Section */}
-                <section className="mx-auto max-w-7xl px-6 mb-32">
+                <section className="mx-auto max-w-7xl px-6 mb-16">
                     <div className="border-t border-white/10 pt-16">
                         <Reveal delayMs={200}>
                             <h2 className="text-3xl font-bold mb-12">Why Cosmic Thinking Lab?</h2>
@@ -97,7 +97,7 @@ export default function Careers(): JSX.Element {
                 </section>
 
                 {/* Open Roles Section */}
-                <section className="mx-auto max-w-7xl px-6 mb-32">
+                <section className="mx-auto max-w-7xl px-6 mb-16">
                     <div className="border-t border-white/10 pt-16">
                         <Reveal delayMs={300}>
                             <h2 className="text-3xl font-bold mb-12">Open Positions</h2>
@@ -137,7 +137,7 @@ export default function Careers(): JSX.Element {
                 {/* Culture CTA */}
                 <section className="mx-auto max-w-7xl px-6">
                     <Reveal delayMs={400}>
-                        <div className="bg-gradient-to-r from-gray-900 to-black border border-white/10 p-12 md:p-20 text-center rounded-2xl">
+                        <div className="bg-gradient-to-r from-gray-900 to-[#12122b] border border-white/10 p-12 md:p-20 text-center rounded-2xl">
                             <h2 className="text-4xl md:text-5xl font-bold mb-6">Don't see your role?</h2>
                             <p className="text-gray-400 mb-8 max-w-xl mx-auto text-lg">
                                 We are always looking for exceptional talent. Send us your portfolio and tell us how you can contribute to the mission.

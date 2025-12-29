@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 export default function Services(): JSX.Element {
   return (
-    <section id="services" className="relative py-32 md:py-40 bg-black">
+    <section id="services" className="relative py-4 md:py-6 bg-transparent">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-24">
           <h2 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tight">

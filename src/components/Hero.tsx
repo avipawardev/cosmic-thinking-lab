@@ -5,21 +5,13 @@ export default function Hero(): JSX.Element {
     <section data-hero="" className="hero-section">
       <div className="nav-wrapper">
         <div>
-          <Link to="/" className="w-inline-block w--current">
-            <img src="/logo.png" alt="Cosmic Thinking Lab" className="main-logo" />
-          </Link>
-          <Link to="/login" className="icon-button is-desktop w-inline-block">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 501 501" fill="none" className="gate-icon">
-              <g clipPath="url(#clip0_592_14)">
-                <path d="M250.5 -1.3916C127.727 -1.3916 27.8333 98.5022 27.8333 221.275V501H55.6666C55.6666 462.618 86.8678 431.417 125.25 431.417V403.583C98.0011 403.583 73.3686 414.828 55.6666 432.92V327.042H236.583V432.92C218.881 414.828 194.249 403.583 167 403.583V431.417C205.382 431.417 236.583 462.618 236.583 501H264.417C264.417 462.618 295.618 431.417 334 431.417V403.583C306.751 403.583 282.119 414.828 264.417 432.92V327.042H445.333V432.92C427.631 414.828 402.999 403.583 375.75 403.583V431.417C414.132 431.417 445.333 462.618 445.333 501H473.167V221.275C473.167 98.5022 373.273 -1.3916 250.5 -1.3916ZM433.003 153.083H264.417V26.9984C341.793 32.4816 406.84 83.3331 433.003 153.083ZM236.583 26.9984V153.083H67.9968C94.1601 83.3331 159.207 32.4816 236.583 26.9984ZM55.6666 299.208V221.275C55.6666 207.442 57.1418 193.943 59.8973 180.917H236.583V299.208H55.6666ZM264.417 299.208V180.917H441.103C443.858 193.943 445.333 207.442 445.333 221.275V299.208H264.417Z" fill="currentColor" />
-              </g>
-              <defs>
-                <clipPath id="clip0_592_14">
-                  <rect width="501" height="501" fill="currentColor" />
-                </clipPath>
-              </defs>
-            </svg>
-            <div>Cosmic Thinking Lab</div>
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src="https://lh3.googleusercontent.com/gg-dl/ABS2GSn1YP1MKmJKU0NniuXlvfv9Y0e5Iwlc6YI4b2xcoS4RSNFc4G6q_LNNBG6uqJ_zZWZBfqP7PEwncvKAIs6A1C0y5VRuSEvp7IBUQIS7f_G0K7arzrUXMptVoknPTIXwc4o4Ar5tQWGgnVl1gaCVz94hRCyyy7LYEmGe3lKpsLAXni9l5w=s1024-rj" 
+              alt="Cosmic Thinking Lab" 
+              className="w-10 h-10 rounded" 
+            />
+            <span className="text-white text-lg font-semibold">Cosmic Thinking Lab</span>
           </Link>
         </div>
       </div>
@@ -48,39 +40,23 @@ export default function Hero(): JSX.Element {
             <span className="split-word" aria-hidden="true" style={{ "--word": 8 } as React.CSSProperties}>Solutions</span>
           </h1>
           <div className="nav-bar">
-            <Link to="/services" className="nav-button is-btn w-inline-block">
+            <Link to="/services" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
               <div>SERVICES</div>
             </Link>
-            <div className="nav-button is-non">/</div>
-            <Link to="/portfolio" className="nav-button is-btn w-inline-block">
+            <Link to="/portfolio" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
               <div>WORK</div>
             </Link>
-            <div className="nav-button is-non">/</div>
-            <Link to="/about" className="nav-button is-btn w-inline-block">
+            <Link to="/about" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
               <div>ABOUT</div>
             </Link>
-            <div className="nav-button is-non">/</div>
-            <Link to="/careers" className="nav-button is-btn w-inline-block">
+            <Link to="/careers" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
               <div>CAREERS</div>
             </Link>
-            <div className="nav-button is-non">/</div>
-            <Link to="/contact" className="nav-button is-btn w-inline-block">
+            <Link to="/contact" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
               <div>CONNECT</div>
             </Link>
           </div>
-          <Link to="/login" className="icon-button is-mobile w-inline-block">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 501 501" fill="none" className="gate-icon">
-              <g clipPath="url(#clip0_592_14)">
-                <path d="M250.5 -1.3916C127.727 -1.3916 27.8333 98.5022 27.8333 221.275V501H55.6666C55.6666 462.618 86.8678 431.417 125.25 431.417V403.583C98.0011 403.583 73.3686 414.828 55.6666 432.92V327.042H236.583V432.92C218.881 414.828 194.249 403.583 167 403.583V431.417C205.382 431.417 236.583 462.618 236.583 501H264.417C264.417 462.618 295.618 431.417 334 431.417V403.583C306.751 403.583 282.119 414.828 264.417 432.92V327.042H445.333V432.92C427.631 414.828 402.999 403.583 375.75 403.583V431.417C414.132 431.417 445.333 462.618 445.333 501H473.167V221.275C473.167 98.5022 373.273 -1.3916 250.5 -1.3916ZM433.003 153.083H264.417V26.9984C341.793 32.4816 406.84 83.3331 433.003 153.083ZM236.583 26.9984V153.083H67.9968C94.1601 83.3331 159.207 32.4816 236.583 26.9984ZM55.6666 299.208V221.275C55.6666 207.442 57.1418 193.943 59.8973 180.917H236.583V299.208H55.6666ZM264.417 299.208V180.917H441.103C443.858 193.943 445.333 207.442 445.333 221.275V299.208H264.417Z" fill="currentColor" />
-              </g>
-              <defs>
-                <clipPath id="clip0_592_14">
-                  <rect width="501" height="501" fill="currentColor" />
-                </clipPath>
-              </defs>
-            </svg>
-            <div>Cosmic Thinking Lab</div>
-          </Link>
+
         </div>
         <div className="heading-width">
           <h2 className="heading-6 is-hero">Innovation First.</h2>
