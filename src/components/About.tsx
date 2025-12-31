@@ -17,7 +17,7 @@ export default function About(): JSX.Element {
                 About Cosmic Thinking Lab
               </h2>
               <p className="text-xl md:text-2xl text-gray-400 leading-relaxed font-light mb-8">
-                We partner with ambitious teams to build world-class software products. Since 2015, we've helped startups and enterprises scale their technical vision.
+                We partner with ambitious teams to build world-class software products. Since 2015, we've helped startups and enterprises scale their technical vision. <span className="gradient-text font-medium">Founded by IIT Ropar alumni with deep technical expertise.</span>
               </p>
 
               <div className="grid grid-cols-3 gap-8">
@@ -58,6 +58,7 @@ export default function About(): JSX.Element {
             </div>
           </Reveal>
         </div>
+
       </div>
     </section>
   );

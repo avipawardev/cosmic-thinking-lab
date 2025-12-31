@@ -5,9 +5,11 @@ export default function Footer(): JSX.Element {
     <footer className="py-8 bg-transparent border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="text-center md:text-left">
-            <div className="text-2xl font-bold text-white mb-2">Cosmic Thinking Lab</div>
-            <div className="text-gray-500 text-sm">Software Development & Strategic Consulting</div>
+          <div className="text-center">
+            <div className="flex items-center justify-center mb-2">
+              <img src="/cosmic-text-logo.png" alt="Cosmic Thinking Lab" className="h-12 w-auto" />
+            </div>
+            <div className="text-gray-500 text-sm text-center">Software Development & Strategic Consulting</div>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-8 text-sm">

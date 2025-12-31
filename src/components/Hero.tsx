@@ -6,12 +6,16 @@ export default function Hero(): JSX.Element {
       <div className="nav-wrapper">
         <div>
           <Link to="/" className="flex items-center gap-3">
-            <img 
-              src="https://lh3.googleusercontent.com/gg-dl/ABS2GSn1YP1MKmJKU0NniuXlvfv9Y0e5Iwlc6YI4b2xcoS4RSNFc4G6q_LNNBG6uqJ_zZWZBfqP7PEwncvKAIs6A1C0y5VRuSEvp7IBUQIS7f_G0K7arzrUXMptVoknPTIXwc4o4Ar5tQWGgnVl1gaCVz94hRCyyy7LYEmGe3lKpsLAXni9l5w=s1024-rj" 
-              alt="Cosmic Thinking Lab" 
-              className="w-10 h-10 rounded" 
+            <img
+              src="/cosmic-logo.png"
+              alt="Cosmic Thinking Lab"
+              className="w-10 h-10"
             />
-            <span className="text-white text-lg font-semibold">Cosmic Thinking Lab</span>
+            <img
+              src="/cosmic-text-logo.png"
+              alt="Cosmic Thinking Lab"
+              className="h-8 w-auto"
+            />
           </Link>
         </div>
       </div>
@@ -58,7 +62,7 @@ export default function Hero(): JSX.Element {
           </div>
 
         </div>
-        <div className="heading-width">
+        <div className="heading-width mt-16">
           <h2 className="heading-6 is-hero">Innovation First.</h2>
           <div className="heading-6 gradient-text">Pioneering world-class</div>
           <div className="heading-6 gradient-text">engineering and design.</div>

@@ -13,7 +13,7 @@ const projects: Project[] = [
   { name: "Fintech Web App", tagline: "Secure transaction platform", tags: ["React", "Microservices"], outcomes: ["$2M/mo volume", "SOC 2 certified"] },
   { name: "Mobile App MVP", tagline: "React Native cross-platform app", tags: ["React Native", "Firebase"], outcomes: ["iOS & Android", "50K downloads"] },
   { name: "API Infrastructure", tagline: "High-performance REST API", tags: ["TypeScript", "AWS", "Docker"], outcomes: ["10K RPS", "100ms p95"] },
-  { name: "Design System", tagline: "Component library for enterprise", tags: ["React", "Storybook"], outcomes: ["200+ components", "3 teams"] },
+  { name: "University LMS", tagline: "Learning management system for education", tags: ["React", "Storybook"], outcomes: ["200+ components", "3 teams"] },
 ];
 
 export default function Portfolio(): JSX.Element {

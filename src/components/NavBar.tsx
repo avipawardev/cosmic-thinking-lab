@@ -17,7 +17,8 @@ export default function NavBar(): JSX.Element {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between py-6">
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/logo.png" alt="Cosmic Thinking Lab" className="h-8 w-auto" />
+            <img src="/cosmic-logo.png" alt="Cosmic Thinking Lab" className="h-10 w-auto" />
+            <img src="/cosmic-text-logo.png" alt="Cosmic Thinking Lab" className="h-8 w-auto" />
           </Link>
 
           <div className="hidden md:flex items-center gap-10">
