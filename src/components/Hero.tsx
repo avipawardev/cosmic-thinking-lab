@@ -1,25 +1,9 @@
 import { Link } from "react-router-dom";
 
 export default function Hero(): JSX.Element {
+
   return (
     <section data-hero="" className="hero-section">
-      <div className="nav-wrapper">
-        <div>
-          <Link to="/" className="flex items-center gap-3">
-            <img
-              src="/cosmic-logo.png"
-              alt="Cosmic Thinking Lab"
-              className="w-10 h-10"
-            />
-            <img
-              src="/cosmic-text-logo.png"
-              alt="Cosmic Thinking Lab"
-              className="h-8 w-auto"
-            />
-          </Link>
-        </div>
-      </div>
-
       <div className="full-video w-embed">
         <div style={{ width: "100%", height: "100%" }} className="w-background-video w-background-video-atom">
           <video playsInline loop muted autoPlay data-wf-ignore="true" data-object-fit="cover" preload="auto">
@@ -30,9 +14,6 @@ export default function Hero(): JSX.Element {
 
       <div className="hero-container">
         <div className="hero-flex">
-          <div className="hero-subline">
-            <div className="subheading is-hero">DIGITAL EXCELLENCE</div>
-          </div>
           <h1 className="hero-title" aria-label="Cosmic Thinking Labs Modern Software & Web Solutions">
             <span className="split-word" aria-hidden="true" style={{ "--word": 1 } as React.CSSProperties}>Cosmic</span>{" "}
             <span className="split-word" aria-hidden="true" style={{ "--word": 2 } as React.CSSProperties}>Thinking</span>{" "}
@@ -43,20 +24,20 @@ export default function Hero(): JSX.Element {
             <span className="split-word" aria-hidden="true" style={{ "--word": 7 } as React.CSSProperties}>Web</span>{" "}
             <span className="split-word" aria-hidden="true" style={{ "--word": 8 } as React.CSSProperties}>Solutions</span>
           </h1>
-          <div className="nav-bar">
-            <Link to="/services" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
+          <div className="nav-bar flex flex-wrap gap-2 md:gap-4">
+            <Link to="/services" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
               <div>SERVICES</div>
             </Link>
-            <Link to="/portfolio" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
+            <Link to="/portfolio" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
               <div>WORK</div>
             </Link>
-            <Link to="/about" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
+            <Link to="/about" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
               <div>ABOUT</div>
             </Link>
-            <Link to="/careers" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
+            <Link to="/careers" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
               <div>CAREERS</div>
             </Link>
-            <Link to="/contact" className="nav-button px-4 py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors">
+            <Link to="/contact" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
               <div>CONNECT</div>
             </Link>
           </div>

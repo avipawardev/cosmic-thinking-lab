@@ -19,51 +19,51 @@ const projects: Project[] = [
 export default function Portfolio(): JSX.Element {
   return (
     <section id="portfolio" className="relative py-4 md:py-6 bg-transparent">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center mb-24">
-          <h2 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tight">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-white mb-6 md:mb-8 tracking-tight">
             Portfolio
           </h2>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-light">
             Showcasing our impact through transformative digital solutions.
           </p>
         </div>
 
-        <div className="grid gap-8 md:gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:gap-8 lg:gap-12 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((p, idx) => (
             <Reveal key={p.name} delayMs={100 * (idx % 3)}>
-              <article className="group border border-white/10 hover:border-white/30 transition-colors p-8 h-96 flex flex-col">
-                <div className="mb-6 flex-1">
-                  <h3 className="text-2xl font-bold text-white mb-3">{p.name}</h3>
-                  <p className="text-gray-400 mb-6 leading-relaxed">{p.tagline}</p>
+              <article className="group border border-white/10 hover:border-white/30 transition-colors p-4 sm:p-6 lg:p-8 h-80 sm:h-96 flex flex-col">
+                <div className="mb-4 sm:mb-6 flex-1">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">{p.name}</h3>
+                  <p className="text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">{p.tagline}</p>
                 </div>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6">
                   {p.tags.map((t) => (
                     <span
                       key={t}
-                      className="px-3 py-1 bg-white/5 text-gray-300 text-sm rounded-full border border-white/10"
+                      className="px-2 sm:px-3 py-1 bg-white/5 text-gray-300 text-xs sm:text-sm rounded-full border border-white/10"
                     >
                       {t}
                     </span>
                   ))}
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6">
                   {p.outcomes.map((o) => (
                     <div
                       key={o}
-                      className="text-center p-3 bg-white/5 rounded-lg border border-white/10"
+                      className="text-center p-2 sm:p-3 bg-white/5 rounded-lg border border-white/10"
                     >
-                      <div className="text-lg font-bold text-white">{o}</div>
+                      <div className="text-sm sm:text-lg font-bold text-white">{o}</div>
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-4 border-t border-white/10 mt-auto">
+                <div className="pt-3 sm:pt-4 border-t border-white/10 mt-auto">
                   <a
                     href="#contact"
-                    className="text-sm font-medium text-white hover:text-gray-300 transition-colors inline-flex items-center gap-2"
+                    className="text-xs sm:text-sm font-medium text-white hover:text-gray-300 transition-colors inline-flex items-center gap-1 sm:gap-2"
                   >
                     <span>Learn more</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
