@@ -32,13 +32,13 @@ export default function Portfolio(): JSX.Element {
         <div className="grid gap-6 md:gap-8 lg:gap-12 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((p, idx) => (
             <Reveal key={p.name} delayMs={100 * (idx % 3)}>
-              <article className="group border border-white/10 hover:border-white/30 transition-colors p-4 sm:p-6 lg:p-8 h-80 sm:h-96 flex flex-col">
+              <article className="group bg-[#0a0a14]/90 border border-white/10 hover:border-white/30 transition-colors p-4 sm:p-6 lg:p-8 h-full min-h-[20rem] sm:min-h-[24rem] flex flex-col">
                 <div className="mb-4 sm:mb-6 flex-1">
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3">{p.name}</h3>
                   <p className="text-gray-400 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">{p.tagline}</p>
                 </div>
 
-                <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6">
+                <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6 h-[3rem] content-end">
                   {p.tags.map((t) => (
                     <span
                       key={t}
@@ -53,14 +53,14 @@ export default function Portfolio(): JSX.Element {
                   {p.outcomes.map((o) => (
                     <div
                       key={o}
-                      className="text-center p-2 sm:p-3 bg-white/5 rounded-lg border border-white/10"
+                      className="text-center p-2 sm:p-3 bg-white/5 rounded-lg border border-white/10 flex flex-col justify-center h-24"
                     >
                       <div className="text-sm sm:text-lg font-bold text-white">{o}</div>
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-3 sm:pt-4 border-t border-white/10 mt-auto">
+                <div className="pt-4 sm:pt-6 lg:pt-8 border-t border-white/10 mt-auto">
                   <a
                     href="#contact"
                     className="text-xs sm:text-sm font-medium text-white hover:text-gray-300 transition-colors inline-flex items-center gap-1 sm:gap-2"

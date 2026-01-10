@@ -20,11 +20,11 @@ export default function NavBar({ isHome = false }: NavBarProps): JSX.Element {
     <header
       className={
         isHome
-          ? "absolute top-0 inset-x-0 z-50 p-6"
+          ? "absolute top-0 inset-x-0 z-50 pt-6"
           : "fixed top-0 inset-x-0 z-50 bg-[#0a0a14]/80 backdrop-blur-md border-b border-white/10"
       }
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <div className="flex items-center justify-between py-6">
           <Link to="/" className="flex items-center space-x-3">
             <img
