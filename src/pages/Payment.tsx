@@ -39,10 +39,32 @@ export default function Payment() {
             name: "Cosmic Thinking Labs",
             description: payFor || "Service Payment",
             image: "/cosmic-logo.png",
-            handler: function (response: any) {
+            handler: async function (response: any) {
                 setPaymentId(response.razorpay_payment_id)
                 setPaymentSuccess(true)
                 setLoading(false)
+
+                try {
+                    await fetch('http://localhost:9090/api/payment/success', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            paymentId: response.razorpay_payment_id,
+                            amount: Number(amount),
+                            payFor: payFor || "Service Payment",
+                            firstName,
+                            lastName,
+                            email,
+                            mobileNumber,
+                            notes
+                        })
+                    });
+                    console.log('Payment success notification sent to backend');
+                } catch (error) {
+                    console.error('Failed to notify backend of payment success:', error);
+                }
             },
             prefill: {
                 name: `${firstName} ${lastName}`,
