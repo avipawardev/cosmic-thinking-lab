@@ -24,23 +24,6 @@ export default function Hero(): JSX.Element {
             <span className="split-word" aria-hidden="true" style={{ "--word": 7 } as React.CSSProperties}>Web</span>{" "}
             <span className="split-word" aria-hidden="true" style={{ "--word": 8 } as React.CSSProperties}>Solutions</span>
           </h1>
-          <div className="nav-bar flex flex-wrap gap-2 md:gap-4">
-            <Link to="/services" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
-              <div>SERVICES</div>
-            </Link>
-            <Link to="/portfolio" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
-              <div>WORK</div>
-            </Link>
-            <Link to="/about" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
-              <div>ABOUT</div>
-            </Link>
-            <Link to="/careers" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
-              <div>CAREERS</div>
-            </Link>
-            <Link to="/contact" className="nav-button px-3 py-1 md:px-4 md:py-2 border border-white/20 rounded-full hover:border-white/40 transition-colors text-sm md:text-base">
-              <div>CONNECT</div>
-            </Link>
-          </div>
 
         </div>
         <div className="heading-width mt-16">

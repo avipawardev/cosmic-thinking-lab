@@ -1,9 +1,9 @@
 import { Shield, Zap, Maximize } from 'lucide-react'
 import { useState, useEffect } from 'react'
-import NavBar from '../components/NavBar'
 import Hero from '../components/Hero'
+import TrustedBy from '../components/TrustedBy'
 import Services from '../components/Services'
-import Portfolio from '../components/Portfolio'
+import Solutions from '../components/Solutions'
 import About from '../components/About'
 import ContactCTA from '../components/ContactCTA'
 import Footer from '../components/Footer'
@@ -21,8 +21,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <NavBar isHome={true} />
       <Hero />
+      <TrustedBy />
       <div className="relative">
         {/* Moving gradient circles */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
@@ -119,7 +119,7 @@ export default function Home() {
             </div>
           </section>
           <Services />
-          <Portfolio />
+          <Solutions />
           <About />
           <ContactCTA />
           <Footer />

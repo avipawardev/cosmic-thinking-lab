@@ -1,4 +1,3 @@
-import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Reveal from "../components/Reveal";
 import ApplicationModal from "../components/ApplicationModal";
@@ -98,7 +97,6 @@ export default function Careers(): JSX.Element {
 
     return (
         <div className="min-h-screen bg-transparent text-white">
-            <NavBar />
 
             <main className="relative pt-32 pb-12">
                 {/* Hero Section */}

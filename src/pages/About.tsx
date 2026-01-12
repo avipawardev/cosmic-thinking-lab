@@ -1,11 +1,9 @@
-import NavBar from '../components/NavBar'
 import About from '../components/About'
 import Footer from '../components/Footer'
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      <NavBar />
       <main className="relative pt-28">
         <div className="mx-auto max-w-7xl px-6">
           <h1 className="text-3xl md:text-4xl font-semibold">

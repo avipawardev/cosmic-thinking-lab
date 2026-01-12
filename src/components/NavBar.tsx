@@ -10,19 +10,15 @@ export default function NavBar({ isHome = false }: NavBarProps): JSX.Element {
   const [open, setOpen] = useState(false);
 
   const navItems: Array<{ label: string; href: string }> = [
-    { label: "Approach", href: "/services" },
-    { label: "Portfolio", href: "/portfolio" },
+    { label: "Services", href: "/services" },
+    { label: "Solutions", href: "/solutions" },
     { label: "About", href: "/about" },
     { label: "Careers", href: "/careers" },
   ];
 
   return (
     <header
-      className={
-        isHome
-          ? "absolute top-0 inset-x-0 z-50 pt-6"
-          : "fixed top-0 inset-x-0 z-50 bg-[#0a0a14]/80 backdrop-blur-md border-b border-white/10"
-      }
+      className="fixed top-0 inset-x-0 z-50 pt-6"
     >
       <div className="mx-auto max-w-[1400px] px-6 md:px-12">
         <div className="flex items-center justify-between py-6">
@@ -39,25 +35,23 @@ export default function NavBar({ isHome = false }: NavBarProps): JSX.Element {
             />
           </Link>
 
-          {!isHome && (
-            <div className="hidden md:flex items-center gap-10">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className="text-sm text-gray-400 hover:text-white transition-colors font-medium"
-                >
-                  {item.label}
-                </Link>
-              ))}
+          <div className="hidden md:flex items-center gap-6">
+            {navItems.map((item) => (
               <Link
-                to="/contact"
-                className="bg-white text-black px-6 py-3 rounded-full font-semibold transition-all hover:bg-gray-200 text-sm"
+                key={item.href}
+                to={item.href}
+                className="text-sm text-gray-200 hover:text-white transition-colors font-medium border border-white/20 rounded-full px-6 py-2 hover:bg-white/10 uppercase tracking-wide"
               >
-                Connect
+                {item.label}
               </Link>
-            </div>
-          )}
+            ))}
+            <Link
+              to="/contact"
+              className="bg-white text-black px-6 py-3 rounded-full font-bold transition-all hover:bg-gray-200 text-sm uppercase tracking-wide ml-4"
+            >
+              Connect
+            </Link>
+          </div>
 
           <button
             aria-label="Open menu"
@@ -75,7 +69,7 @@ export default function NavBar({ isHome = false }: NavBarProps): JSX.Element {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className="text-sm text-gray-400 hover:text-white transition-colors font-medium"
+                  className="text-sm text-gray-200 hover:text-white transition-colors font-medium border border-white/20 rounded-full px-6 py-2 hover:bg-white/10 uppercase tracking-wide text-center"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
@@ -83,7 +77,7 @@ export default function NavBar({ isHome = false }: NavBarProps): JSX.Element {
               ))}
               <Link
                 to="/contact"
-                className="mt-2 bg-white text-black px-8 py-4 rounded-full font-semibold transition-all hover:bg-gray-200 text-sm text-center"
+                className="mt-2 bg-white text-black px-8 py-4 rounded-full font-bold transition-all hover:bg-gray-200 text-sm text-center uppercase tracking-wide"
                 onClick={() => setOpen(false)}
               >
                 Connect
